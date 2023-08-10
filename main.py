@@ -21,7 +21,7 @@ for card in card_list.find_all("div", {"class": "item"}):
     data = {
         "all phones": card.find("div", {"class": "listbox_title oh"}).text,
         "cost": card.find("div", {"class": "listbox_price"}).text,
-        'image': "https://www.kivano.kg" + card.find('img').get('src')
+        'the image': "https://www.kivano.kg" + card.find('img').get('src')
     }
 
     result.append(data)
